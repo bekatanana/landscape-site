@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ლანდშაფტის დიზაინი • ნამუშევრები</title>
+  <meta name="description" content="ნამუშევრები — ჩვენი დასრულებული პროექტების ფოტოები და შთაგონება ლანდშაფტის დიზაინიდან.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">🌿 Landscape</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-label="მენიუს გახსნა">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="works.html">ნამუშევრები</a></li>
+        <li><a href="courses.html">კურსები</a></li>
+        <li><a href="projects.html">პროექტები</a></li>
+        <li><a href="blog.html">ბლოგი</a></li>
+        <li><a href="index.html#about">ჩვენ შესახებ</a></li>
+        <li><a href="index.html#contact">კონტაქტი</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="section">
+    <div class="container">
+      <h1 style="margin:0 0 8px;">ნამუშევრები</h1>
+      <p class="muted">მცენარეების შერჩევიდან სარწყავის მონტაჟამდე — აირჩიე პროექტი და ნახე სრულ ზომაში.</p>
+
+      <!-- Gallery Grid -->
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="assets/img/works1.jpg" alt="ეზოს გამწვანება #1" data-index="0">
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/works2.jpg" alt="ეზოს გამწვანება #2" data-index="1">
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/works3.jpg" alt="ეზოს გამწვანება #3" data-index="2">
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/works4.jpg" alt="ეზოს გამწვანება #4" data-index="3">
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/works5.jpg" alt="ეზოს გამწვანება #5" data-index="4">
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/works6.jpg" alt="ეზოს გამწვანება #6" data-index="5">
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/works7.jpg" alt="ეზოს გამწვანება #7" data-index="6">
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/img/works8.jpg" alt="ეზოს გამწვანება #8" data-index="7">
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="დახურვა">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="წინა">&#10094;</button>
+    <img class="lb-image" id="lbImage" alt="">
+    <button class="lb-nav lb-next" id="lbNext" aria-label="შემდეგი">&#10095;</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Landscape • ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

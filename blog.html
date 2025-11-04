@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ლანდშაფტის დიზაინი • ბლოგი</title>
+  <meta name="description" content="ბლოგი: რჩევები, გზამკვლევები და პრაქტიკული გამოცდილება ლანდშაფტის დიზაინიდან.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">🌿 Landscape</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-label="მენიუს გახსნა">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="works.html">ნამუშევრები</a></li>
+        <li><a href="courses.html">კურსები</a></li>
+        <li><a href="projects.html">პროექტები</a></li>
+        <li><a href="blog.html">ბლოგი</a></li>
+        <li><a href="index.html#about">ჩვენ შესახებ</a></li>
+        <li><a href="index.html#contact">კონტაქტი</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="section">
+    <div class="container">
+      <h1 style="margin:0 0 8px;">ბლოგი</h1>
+      <p class="muted">რჩევები და პრაქტიკული გამოცდილება ლანდშაფტზე.</p>
+
+      <div class="blog-toolbar">
+        <input id="blogSearch" type="search" placeholder="მოძებნე პოსტები..." aria-label="ძებნა">
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+        <article class="blog-card" data-title="მარადმწვანეები ეზოში" data-tags="მცენარეები,დიზაინი,ზამთარი">
+          <a href="post-1.html" class="blog-thumb">
+            <img src="assets/img/blog1-cover.jpg" alt="მარადმწვანეები ეზოში">
+          </a>
+          <div class="blog-body">
+            <a class="blog-title" href="post-1.html">მარადმწვანეები ეზოში: შერჩევა და მოვლა</a>
+            <div class="blog-meta">2025-11-01 · ტეგები: მცენარეები, დიზაინი</div>
+            <p class="muted">რომელი ჯიშები უძლებს სიცივეს და როგორ შევინარჩუნოთ year-round სტრუქტურა.</p>
+            <a class="link" href="post-1.html">კითხულობა →</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-title="სარწყავი სისტემები" data-tags="სარწყავი,მოვლა,პრაქტიკა">
+          <a href="post-2.html" class="blog-thumb">
+            <img src="assets/img/blog2-cover.jpg" alt="სარწყავი სისტემები">
+          </a>
+          <div class="blog-body">
+            <a class="blog-title" href="post-2.html">სარწყავი სისტემები: გავრცელებული შეცდომები</a>
+            <div class="blog-meta">2025-10-18 · ტეგები: სარწყავი, მოვლა</div>
+            <p class="muted">ზონირება, წნევა, დროული მოვლა — რა არ უნდა გამოგვრჩეს.</p>
+            <a class="link" href="post-2.html">კითხულობა →</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-title="ეზოს განათება" data-tags="განათება,დიზაინი,უსაფრთხოება">
+          <a href="post-3.html" class="blog-thumb">
+            <img src="assets/img/blog3-cover.jpg" alt="ეზოს განათება">
+          </a>
+          <div class="blog-body">
+            <a class="blog-title" href="post-3.html">ეზოს განათება: ატმოსფერო + უსაფრთხოება</a>
+            <div class="blog-meta">2025-09-02 · ტეგები: განათება, დიზაინი</div>
+            <p class="muted">როგორ დავაბალანსოთ ბილიკები, მცენარეები და LED შუქები.</p>
+            <a class="link" href="post-3.html">კითხულობა →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Landscape • ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

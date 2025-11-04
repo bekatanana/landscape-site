@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>პროექტი — ვაჟა-ფშაველას გამზირი 35</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">🌿 Landscape</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-label="მენიუს გახსნა">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="works.html">ნამუშევრები</a></li>
+        <li><a href="courses.html">კურსები</a></li>
+        <li><a href="projects.html">პროექტები</a></li>
+        <li><a href="blog.html">ბლოგი</a></li>
+        <li><a href="index.html#about">ჩვენ შესახებ</a></li>
+        <li><a href="index.html#contact">კონტაქტი</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="section">
+    <div class="container">
+      <h1 style="margin:0 0 6px;">ვაჟა-ფშაველას გამზირი 35, თბილისი</h1>
+      <p class="muted">შიდა ეზოს გამწვანება • ბილიკები • LED განათება</p>
+
+      <!-- Hero image -->
+      <div class="project-hero">
+        <img src="assets/img/project1-cover.jpg" alt="პროექტის მთავარი ფოტო">
+      </div>
+
+      <!-- Description -->
+      <section class="project-desc">
+        <h2>რა გაკეთდა</h2>
+        <p>
+          ობიექტზე შევქმენით დასასვენებელი მწვანე ზონა, გამოვიყენეთ მარადმწვანე და ყვავილოვანი სპესიების კომბინაცია,
+          დავაგეთ ბუნებრივი ქვით ბილიკები და დავამონტაჟეთ დაბალი LED განათება საღამოს ატმოსფეროსთვის.
+          პროექტზე მუშაობდა 4-კაციანი გუნდი, დრო: 10 დღე.
+        </p>
+        <ul class="checks">
+          <li>დაგეგმარება და ზონირება</li>
+          <li>მცენარეთა შერჩევა და გადარგვა</li>
+          <li>ბილიკების მოწყობა</li>
+          <li>LED განათების მონტაჟი</li>
+        </ul>
+      </section>
+
+      <!-- Gallery (uses same Lightbox JS/CSS as works.html) -->
+      <section class="section" style="padding-top:24px">
+        <h2 style="margin:0 0 12px;">ფოტოები</h2>
+        <div class="gallery">
+          <figure class="gallery-item"><img src="assets/img/project1-1.jpg" alt="ფოტო 1" data-index="0"></figure>
+          <figure class="gallery-item"><img src="assets/img/project1-2.jpg" alt="ფოტო 2" data-index="1"></figure>
+          <figure class="gallery-item"><img src="assets/img/project1-3.jpg" alt="ფოტო 3" data-index="2"></figure>
+          <figure class="gallery-item"><img src="assets/img/project1-4.jpg" alt="ფოტო 4" data-index="3"></figure>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Lightbox Modal (reuse) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="დახურვა">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="წინა">&#10094;</button>
+    <img class="lb-image" id="lbImage" alt="">
+    <button class="lb-nav lb-next" id="lbNext" aria-label="შემდეგი">&#10095;</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Landscape • ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

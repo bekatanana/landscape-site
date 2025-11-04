@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ლანდშაფტის დიზაინის საფუძვლები — კურსი</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">🌿 Landscape</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-label="მენიუს გახსნა">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="works.html">ნამუშევრები</a></li>
+        <li><a href="courses.html">კურსები</a></li>
+        <li><a href="projects.html">პროექტები</a></li>
+        <li><a href="blog.html">ბლოგი</a></li>
+        <li><a href="index.html#about">ჩვენ შესახებ</a></li>
+        <li><a href="index.html#contact">კონტაქტი</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="section">
+    <div class="container">
+      <h1 style="margin:0 0 6px;">ლანდშაფტის დიზაინის საფუძვლები</h1>
+      <p class="muted">დონე: Beginner • ხანგრძლივობა: 4 კვირა • ფორმატი: თეორია + პრაქტიკა</p>
+
+      <div class="project-hero">
+        <img src="assets/img/course1.jpg" alt="კურსის სურათი">
+      </div>
+
+      <section class="project-desc">
+        <h2>რას ისწავლი</h2>
+        <ul class="checks">
+          <li>ბაღის ზონირება და დაგეგმარება</li>
+          <li>მცენარეთა შერჩევა კლიმატის მიხედვით</li>
+          <li>ნიადაგი, დრენაჟი და მორწყვის საფუძვლები</li>
+          <li>მცირე სივრცეების დიზაინის პრინციპები</li>
+        </ul>
+
+        <h2>ვისთვისაა</h2>
+        <p>დამწყებებისთვის, ეზოს/აივნის გამწვანებით დაინტერესებულთათვის და რომელსაც უნდა პრაქტიკული საფუძვლები.</p>
+
+        <h2>ინტერესის ფორმა</h2>
+        <form id="courseInterest" class="form" style="max-width:680px;">
+          <div class="grid-2">
+            <div class="form-field">
+              <label for="cname">სახელი, გვარი</label>
+              <input id="cname" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="cemail">ელ-ფოსტა</label>
+              <input id="cemail" type="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="cphone">ტელეფონი</label>
+            <input id="cphone" type="tel" name="phone" required>
+          </div>
+          <input type="hidden" name="course" value="ლანდშაფტის დიზაინის საფუძვლები">
+          <div class="form-actions"><button class="btn" type="submit">გაგზავნა</button></div>
+        </form>
+
+        <div class="post-nav" style="margin-top:14px;">
+          <a class="btn" href="courses.html">← დაბრუნება კურსებზე</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ლაიტბოქსი არ გვჭირდება აქ, მაგრამ შეგიძლია დატოვო main.js იგივე -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Landscape • ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // დემო გაგზავნა (ბექს გარეშე)
+    document.getElementById('courseInterest').addEventListener('submit', function(e){
+      e.preventDefault();
+      const fd = new FormData(this);
+      alert(
+        `ინტერესი კურსზე: ${fd.get('course')}\n` +
+        `სახელი: ${fd.get('name')}\n` +
+        `Email: ${fd.get('email')}\n` +
+        `ტელ: ${fd.get('phone')}\n\nდემო გაგზავნა წარმატებულია!`
+      );
+      this.reset();
+    });
+  </script>
+</body>
+</html>
